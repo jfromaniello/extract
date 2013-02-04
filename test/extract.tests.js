@@ -14,4 +14,17 @@ describe('extract', function () {
       .should.be.false;
   
   });
+
+  it('should not include missing properties', function(){
+    var r = extract({bar: 456, baz: 789}, ['foo', 'bar']);
+
+    r.hasOwnProperty('foo')
+      .should.be.false;
+    
+    r.hasOwnProperty('bar')
+      .should.be.true;
+
+    r.hasOwnProperty('baz')
+      .should.be.false;
+  });
 });
