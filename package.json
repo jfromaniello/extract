@@ -1,0 +1,29 @@
+{
+  "name": "extract",
+  "version": "0.0.1",
+  "description": "Extract specific properties from objects and generate new one.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "should": "~1.2.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "should": "~1.2.1"
+  },
+  "scripts": {
+    "test": "mocha --require should"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfromaniello/extract.git"
+  },
+  "keywords": [
+    "extract",
+    "properties"
+  ],
+  "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "license": "MIT"
+}
