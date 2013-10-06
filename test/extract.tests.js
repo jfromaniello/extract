@@ -27,4 +27,26 @@ describe('extract', function () {
     r.hasOwnProperty('baz')
       .should.be.false;
   });
+  
+  it('should support nested properties', function () {
+    var r = extract({foo: 123, bar: {baz: 789, boz: 101112}}, ['foo', ['bar', ['baz', 'boz']]]);
+    
+    r.hasOwnProperty('foo')
+      .should.be.true;
+    
+    r.hasOwnProperty('bar')
+      .should.be.true;
+    
+    r.hasOwnProperty('baz')
+      .should.be.false;
+    
+    r.hasOwnProperty('boz')
+      .should.be.false;
+    
+    r.bar.hasOwnProperty('baz')
+      .should.be.true;
+    
+    r.bar.hasOwnProperty('boz')
+      .should.be.true;
+  });
 });
