@@ -1,6 +1,6 @@
 {
   "name": "extract",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Extract specific properties from objects and generate new one.",
   "main": "lib/index.js",
   "directories": {
