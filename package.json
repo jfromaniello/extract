@@ -25,5 +25,8 @@
     "properties"
   ],
   "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "contributors": [
+    "Alan Shaw <alan138@gmail.com>"
+  ],
   "license": "MIT"
 }
